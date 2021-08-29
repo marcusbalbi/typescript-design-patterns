@@ -7,7 +7,8 @@
     "state": "ts-node ./src/state/hotel-rooms",
     "decorator": "ts-node ./src/decorator/starbuzz",
     "chain": "ts-node ./src/chain-of-responsability/discounts-calculator/",
-    "strategy": "ts-node ./src/strategy/ducks-simulator/",
+    "strategy:duck": "ts-node ./src/strategy/ducks-simulator/",
+    "strategy:person": "ts-node ./src/strategy/person/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .ts"
   },
