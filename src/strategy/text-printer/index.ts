@@ -1,5 +1,6 @@
 import faker from "faker";
 import { LineBreakerCountWordsStrategy } from "./line-break/LineBreakerCountWordsStrategy";
+import { LineBreakerTerminalSizeStrategy } from "./line-break/LineBreakerTerminalSizeStrategy";
 import { LineBreakerWordFoundStrategy } from "./line-break/LineBreakerWordFoundStrategy";
 import { Printer } from "./Printer";
 
@@ -14,4 +15,8 @@ printer.print();
 console.log("\n\n========================================================\n\n");
 printer.setLineBreaker(new LineBreakerWordFoundStrategy("et"));
 console.log("LineBreakerWordFoundStrategy Text:\n");
+printer.print();
+console.log("\n\n========================================================\n\n");
+printer.setLineBreaker(new LineBreakerTerminalSizeStrategy(8));
+console.log("LineBreakerTerminalSizeStrategy Text:\n");
 printer.print();
