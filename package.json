@@ -10,6 +10,7 @@
     "strategy:duck": "ts-node ./src/strategy/ducks-simulator/",
     "strategy:person": "ts-node ./src/strategy/person/",
     "strategy:printer": "ts-node ./src/strategy/text-printer/",
+    "builder:person": "ts-node ./src/builder/person/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .ts"
   },

@@ -17,6 +17,6 @@ printer.setLineBreaker(new LineBreakerWordFoundStrategy("et"));
 console.log("LineBreakerWordFoundStrategy Text:\n");
 printer.print();
 console.log("\n\n========================================================\n\n");
-printer.setLineBreaker(new LineBreakerTerminalSizeStrategy(8));
+printer.setLineBreaker(new LineBreakerTerminalSizeStrategy(2));
 console.log("LineBreakerTerminalSizeStrategy Text:\n");
 printer.print();
