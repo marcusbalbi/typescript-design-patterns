@@ -11,6 +11,7 @@
     "strategy:person": "ts-node ./src/strategy/person/",
     "strategy:printer": "ts-node ./src/strategy/text-printer/",
     "builder:person": "ts-node ./src/builder/person/",
+    "builder:tags": "ts-node ./src/builder/tags/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .ts"
   },
