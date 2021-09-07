@@ -1,11 +1,17 @@
 export class CPF {
   constructor(private cpfNumber: string) {
-    this.validateCPF();
+    if (!this.isValid()) {
+      throw new Error("CPF Inválido!");
+    }
   }
 
-  validateCPF() {
+  public getNumber(): string {
+    return this.cpfNumber;
+  }
+
+  protected isValid(): boolean {
     console.log("Validando CPF " + this.cpfNumber);
-    return false;
+    return true;
   }
 }
 
@@ -15,6 +21,14 @@ export class Person {
     private birthdate: string,
     private cpf: CPF,
   ) {}
+
+  getCpf(): CPF {
+    return this.cpf;
+  }
+
+  isSamePerson(p: Person): boolean {
+    return p.cpf.getNumber() === this.cpf.getNumber();
+  }
 }
 
 export class PersonBuilder {

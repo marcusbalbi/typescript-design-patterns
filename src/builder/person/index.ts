@@ -10,4 +10,6 @@ const person = builder
   .addCPF("564564564564545")
   .build();
 
-console.log(person);
+const samePerson = builder.build();
+console.log("Same person ?", person.isSamePerson(samePerson));
+console.log(person.getCpf());
