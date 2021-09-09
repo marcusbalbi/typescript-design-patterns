@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "state": "ts-node ./src/state/hotel-rooms",
-    "decorator": "ts-node ./src/decorator/starbuzz",
+    "decorator:starbuzz": "ts-node ./src/decorator/starbuzz",
+    "decorator:acai": "ts-node ./src/decorator/acai/",
     "chain": "ts-node ./src/chain-of-responsability/discounts-calculator/",
     "strategy:duck": "ts-node ./src/strategy/ducks-simulator/",
     "strategy:person": "ts-node ./src/strategy/person/",
