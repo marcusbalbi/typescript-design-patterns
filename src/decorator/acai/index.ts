@@ -8,4 +8,4 @@ const acaiBalbi = new Acai400ml();
 if (process.argv[1] === "amendoin") {
   new ComAmendoin(acaiBalbi);
 }
-new ComLeiteCondensado().make();
+new ComLeiteCondensado(acaiBalbi).make();
