@@ -1,6 +1,6 @@
 export class SoundSystem {
-  status = false;
-  volume = 5;
+  protected status = false;
+  protected volume = 5;
   on(): void {
     this.status = true;
   }

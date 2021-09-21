@@ -1,6 +1,6 @@
 export class Television {
-  status = false;
-  movie: string | null = null;
+  protected status = false;
+  protected movie: string | null = null;
   on(): void {
     this.status = true;
   }

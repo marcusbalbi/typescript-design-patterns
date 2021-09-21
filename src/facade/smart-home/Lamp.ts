@@ -1,7 +1,7 @@
 export class Lamp {
-  status = false;
-  color = "#FFF";
-  intensity = 10;
+  protected status = false;
+  protected color = "#FFF";
+  protected intensity = 10;
   on(): void {
     this.status = true;
   }
