@@ -12,6 +12,8 @@ export class AcaiFacade {
     Cozinha.adicionarPedido(cliente, acai, mensagem);
 
     // enviar pedido para o cliente
+    // const email = EmailSender(cliente.getEmail());
+    // email.send("Pedido de Acai", `Seu Pedido: ${acai.toString()}`);
     console.log(`Enviando email para: ${cliente.getEmail()}`);
   }
 }
