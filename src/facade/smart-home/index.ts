@@ -16,4 +16,8 @@ import { SmartHomeFacade } from "./SmartHomeFacade";
 // soundSystem.on();
 // soundSystem.changeVolume(7);
 
-SmartHomeFacade.movieEnvironment("Star Trek");
+const homeFacade = new SmartHomeFacade();
+
+homeFacade.movieEnvironment("Star trek");
+
+homeFacade.turnOff();
