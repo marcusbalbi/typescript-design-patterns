@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "adapter:faturamento": "ts-node ./src/adapter/faturamento",
+    "adapter:storage": "ts-node ./src/adapter/storage",
     "state": "ts-node ./src/state/hotel-rooms",
     "decorator:starbuzz": "ts-node ./src/decorator/starbuzz",
     "decorator:acai": "ts-node ./src/decorator/acai/",
