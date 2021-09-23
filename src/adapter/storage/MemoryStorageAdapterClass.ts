@@ -1,8 +1,15 @@
 import { OldStorageClass } from "./OldStorageClass";
 
 export class MemoryStorageAdapterClass extends OldStorageClass {
-  constructor(protected filename: string) {}
-  set(key: string, value: string): void {}
+  protected data: { [key: string]: string } = {};
+  constructor() {
+    super("");
+  }
+  set(key: string, value: string): void {
+    this.data[key] = value;
+  }
 
-  get(key: string): string | undefined {}
+  get(key: string): string | undefined {
+    return this.data[key];
+  }
 }

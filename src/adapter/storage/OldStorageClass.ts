@@ -1,11 +1,13 @@
 import fs from "fs";
 
 export class OldStorageClass {
-  constructor(protected filename: string) {
-    // garante que o arquivo sempre vai existir
-    fs.openSync(filename, "w");
-  }
+  constructor(protected filename: string) {}
   set(key: string, value: string): void {
+    // garante que o arquivo sempre vai existir
+    if (!fs.existsSync(this.filename)) {
+      fs.openSync(this.filename, "w");
+    }
+
     let data = fs.readFileSync(this.filename, { encoding: "utf-8" }).toString();
     const lines = data.split("\n");
 

@@ -1,9 +1,12 @@
+import { MemoryStorageAdapterClass } from "./MemoryStorageAdapterClass";
 import { OldStorageClass } from "./OldStorageClass";
 import { UserClass } from "./UserClass";
 
-const oldStorage = new OldStorageClass("user_storage.txt");
+// const storage = new OldStorageClass("user_storage.txt");
 
-const user = new UserClass(oldStorage);
+const storage = new MemoryStorageAdapterClass();
+
+const user = new UserClass(storage);
 
 user.addUser("marcusbalbi", {
   email: "balbimarcus@gmail.com",
