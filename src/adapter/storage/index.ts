@@ -2,7 +2,7 @@ import { MemoryStorageAdapterClass } from "./MemoryStorageAdapterClass";
 import { OldStorageClass } from "./OldStorageClass";
 import { UserClass } from "./UserClass";
 
-// const storage = new OldStorageClass("user_storage.txt");
+//const storage = new OldStorageClass("user_storage.txt");
 
 const storage = new MemoryStorageAdapterClass();
 

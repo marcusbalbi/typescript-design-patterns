@@ -9,7 +9,8 @@ function exibirPaciente(paciente: PacienteInterface): void {
 }
 
 const cliente = new Cliente("Marcus Balbi", "12345678945");
-exibirPaciente(new PacienteAdapter(cliente));
+const pacienteCliente = new PacienteAdapter(cliente);
+exibirPaciente(pacienteCliente);
 
 const paciente = new Paciente({
   nome: "Joao",
