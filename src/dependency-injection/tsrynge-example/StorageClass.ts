@@ -1,16 +1,17 @@
 import fs from "fs";
 import { injectable } from "tsyringe";
+import { StorageContract } from "./StorageContract";
 
 @injectable()
-export class StorageClass {
-  protected filename = "";
+export class StorageClass implements StorageContract {
+  constructor(protected filename: string) {}
 
-  setFilename(filename: string): void {
+  /*setFilename(filename: string): void {
     if (this.filename !== "") {
       throw new Error("Filename already defined!");
     }
     this.filename = filename;
-  }
+  }*/
 
   validateFilename(): void {
     if (!this.filename) {

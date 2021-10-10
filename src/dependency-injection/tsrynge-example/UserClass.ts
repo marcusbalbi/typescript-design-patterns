@@ -1,5 +1,5 @@
-import { injectable } from "tsyringe";
-import { StorageClass } from "./StorageClass";
+import { inject, injectable } from "tsyringe";
+import { StorageContract } from "./StorageContract";
 
 interface userData {
   login: string;
@@ -9,9 +9,7 @@ interface userData {
 
 @injectable()
 export class UserClass {
-  constructor(protected storage: StorageClass) {
-    this.storage.setFilename("user.txt");
-  }
+  constructor(@inject("StorageContract") protected storage: StorageContract) {}
 
   addUser(username: string, data: userData): void {
     const seriealized = JSON.stringify(data);
