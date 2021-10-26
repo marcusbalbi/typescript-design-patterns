@@ -19,6 +19,7 @@
     "builder:person": "ts-node ./src/builder/person/",
     "builder:tags": "ts-node ./src/builder/tags/",
     "singleton:preferences": "ts-node ./src/singleton/preferences/",
+    "observer:wheater": "ts-node ./src/observer/weather/",
     "di:storage": "ts-node ./src/dependency-injection/tsrynge-example/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .ts"
