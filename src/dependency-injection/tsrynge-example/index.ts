@@ -6,9 +6,9 @@ import { UserClass } from "./UserClass";
 
 //---------------------------------------------------
 // Container configuration (could be another file)
-//container.register("StorageContract", {
-//  useValue: new StorageClass("user.txt"),
-//});
+// container.register("StorageContract", {
+//   useValue: new StorageClass("user.txt"),
+// });
 
 container.register("StorageContract", MemoryStorageClass);
 
